@@ -61,10 +61,10 @@ inquirer
         </head>
         
         <body>
-            <div class="card" style="width: 18rem;background-color: ${color};">
+            <div class="jumbotron" style="width: 50%;background-color: ${color};">
                 <img class="card-img-top" src="${imgUrl}" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">${username}</h5>
+                    <h3 class="card-title">${username}</h3>
                     <p class="card-text">${userBio}</p>
                 </div>
                 <ul class="list-group list-group-flush">
@@ -84,13 +84,13 @@ inquirer
         </html>
 
           `;
-        fs.writeFile("Profile.html", profile, function (err) {
+        /* fs.writeFile("Profile.html", profile, function (err) {
           if (err) {
             throw err;
           }
-        });
+        }); */
 
-        const html = fs.readFileSync('Profile.html', 'utf8');
+        //const html = fs.readFileSync('Profile.html', 'utf8');
         const options={};
         const document={
           html:profile,

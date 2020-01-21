@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="${imgUrl}" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">${username}</h5>
+            <p class="card-text">${userBio}</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Followers: ${numFollowers}</li>
+            <li class="list-group-item">Following: ${numFollowing}</li>
+            <li class="list-group-item">Location: ${location}</li>
+        </ul>
+        <div class="card-body">
+            <a href="# ${website}" class="card-link">website</a>
+            <a href="#" class="card-link">Another link</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

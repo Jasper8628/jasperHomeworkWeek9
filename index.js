@@ -34,7 +34,7 @@ inquirer
       .then(function (res) {
         //console.log(res.data);
         const username = res.data.login;
-        const website = res.data.url;
+        const website = res.data.html_url;
         const blog = res.data.blog;
         const userBio = res.data.bio;
         const publicRepos = res.data.public_repos;
@@ -74,7 +74,7 @@ inquirer
                     <li class="list-group-item">Location: ${location}</li>
                 </ul>
                 <div class="card-body">
-                    <a href="# ${website}" class="card-link">website</a>
+                    <a href="# ${website}" class="card-link">${website}</a>
                     <a href="#" class="card-link">${blog}</a>
                 </div>
             </div>

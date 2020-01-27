@@ -1,6 +1,14 @@
 <html>
 
 <head>
+    
+    <style>
+        /* Set the size of the div element that contains the map */
+       #map {
+         height: 400px;  /* The height is 400 pixels */
+         width: 100%;  /* The width is the width of the web page */
+        }
+     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -18,11 +26,24 @@
             <li class="list-group-item">Following: ${numFollowing}</li>
             <li class="list-group-item">Location: ${location}</li>
         </ul>
+        <div id="map"></div>
         <div class="card-body">
             <a href="# ${website}" class="card-link">website</a>
             <a href="#" class="card-link">Another link</a>
         </div>
     </div>
+    <script>
+
+        function initMap() {
+            var mapLocation = { lat: -25.344, lng: 131.036 };
+            var map = new google.maps.Map(
+                document.getElementById('map'), { zoom: 4, center: mapLocation });
+            var marker = new google.maps.Marker({ position: mapLocation, map: map });
+        }
+    </script>
+     <script async defer
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC64aNkKnCmu7MgUJ60TaZlzarYnFQinYQ&callback=initMap">
+     </script>
 
 </body>
 

@@ -1,0 +1,55 @@
+<html>
+
+        <head>
+        <style>
+          #map {
+            height: 200px;  /* The height is 400 pixels */
+            width: 27%;  /* The width is the width of the web page */
+           }
+        </style>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+                integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        </head>
+        
+        <body>
+            <div class="jumbotron" style="width: 27%;background-color: blue;">
+                <img class="card-img-top" src="https://avatars0.githubusercontent.com/u/57053592?v=4" alt="Card image cap">
+                <div class="card-body">
+                    <h3 class="card-title">Jasper8628</h3>
+                    <p class="card-text">null</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Followers: 0</li>
+                    <li class="list-group-item">Following: 0</li>
+                    <li class="list-group-item">Public repos: 12</li>
+                    <li class="list-group-item">Location: Sydney,NSW,Australia</li>
+                </ul>
+                <div class="card-body">
+                    <a href="# https://github.com/Jasper8628" class="card-link">https://github.com/Jasper8628</a>
+                    <a href="#" class="card-link"></a>
+                </div>
+            </div>
+            <div id="map"></div>
+            <div class="card-body">
+                <a href="# https://github.com/Jasper8628" class="card-link">website</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+        <script>
+            function initMap() {
+                var mapLocation = {lat:-33.8688197,lng:151.2092955};
+                var map = new google.maps.Map(
+                    document.getElementById('map'), { zoom: 4, center: mapLocation });
+                var marker = new google.maps.Marker({ position: mapLocation, map: map });
+            }
+        </script>
+         <script async defer
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC64aNkKnCmu7MgUJ60TaZlzarYnFQinYQ&callback=initMap">
+         </script>
+        
+        </body>
+        
+        </html>
+
+          
